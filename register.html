@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    background-image: url("best-hd-Blue-Background.jpg");
+	background-repeat: no-repeat;
+	background-size: 1550px;
+	top-margin: 0;
+	}
+#title{
+      background-color: #020926;
+	  overflow: hidden;
+		height: 120px;
+		box-shadow: 10px 10px 5px grey;
+	  }
+	
+
+	
+img {
+padding-top: 12px;
+    width: 90px;
+	height: 90px;
+	vertical-align: sup;
+	padding-left: 5px;
+	}
+
+h1{
+    font-family: Times New Roman;
+	font-size: 60px;
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #b7defd;
+	text-align:center;
+	padding-top: 0.4px;
+	}
+.icon {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.form{
+      background-image: linear-gradient(to bottom, #00aaf7, #004389);
+      position: relative;
+	  left: 500px;
+      border: 2px solid #15365f;
+	  border-radius: 15px;
+	  text-align: left;
+	  padding-bottom: 10px;
+	  padding-top: 10px;
+	  padding-left: 8px;
+	  padding-right: 2px;
+	  margin-top: 60px;
+	  margin-right: 50px;
+	  line-height: 40px;
+	  height: 400px;
+	  width: 600px;
+	 }
+	 
+#main {
+    transition: margin-left .5s;
+      }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+	
+
+	
+
+
+</style>
+</head>
+<body id="main">
+<div id="title">
+<img src="logo.png" alt="LOGO" style="float:left;"> 
+<h1> Kamla Nehru Girls' Hostel </h1>
+</div>
+
+<div id="sidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Hostel.html">Home</a>
+  <a href="#">About</a>
+  <a href="#">Your Profile</a>
+  <a href="#">Roommate Allotment</a>
+  <a href="#">Fee Submission</a>
+  <a href="#">Grievances</a>
+  <a href="#">Contact</a>
+</div>
+<br>
+
+<div class="icon" onclick="openNav()"></div>
+<div class="icon" onclick="openNav()"></div>
+<div class="icon" onclick="openNav()"></div>
+
+<form action="new 1.php" method="post" target="_blank">
+<div class="form">
+<p style="font-family: 'Arial'; font-size: 20px; font-weight: bold; color: black; font-variant: small-caps; text-decoration: none;"> Register: </p>
+<label> Name: </label> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp; 
+<input type="text" placeholder="Your Name...." required name="name" autofocus style="width: 150px; height: 20px; padding: 2px;"><br>
+<label> Registration Number: </label> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp;
+<input type="entry" placeholder="Your Reg. No....." name="reg" style="width: 150px; height: 20px; padding: 2px;"><br>
+<label> Branch: </label>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp;&nbsp;
+<select style="width: 150px; height:20px;" > 
+<option>Biotechnology</option>
+<option>Chemical Engineering</option>
+<option>Civil Engineering</option>
+<option>Computer Science and Engineering</option>
+<option>Electrical Engineering</option>
+<option>Electronics and Communication Engineering</option>
+<option>Information Technology</option>
+<option>Mechanical Engineering</option>
+<option>Production and Industrial Engineering</option>
+</select>
+<br>
+<label> Home Address: </label> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&ensp;   
+<textarea placeholder="Your Address..." name="add" style="width: 250px; height: 40px; padding: 2px;"></textarea><br>
+<label> Contact No.: </label> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp;   
+<input type="tel" placeholder="Your Cotact No....." name="con" style="width: 150px; height: 20px; padding: 2px;"><br><br>
+<input type="submit" id="btn" value="Register" style="position: relative; left: 250px;">
+</div>
+</form>
+
+
+<script>
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+   
+
+
+</body>
+</html>
